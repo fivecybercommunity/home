@@ -171,7 +171,16 @@ body {
   }
 }
 
-.container-small, .container-large {
+.container-small,
+.container-large {
   max-width: 100%;
+}
+
+.scroll-wrapper {
+  height: 10%;
+}
+
+.scroll-link {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
