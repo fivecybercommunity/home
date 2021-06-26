@@ -1,0 +1,38 @@
+@import './fonts';
+@import './loader';
+@import './internal';
+@import './customize';
+
+body {
+    background-color : #121212;
+}
+
+@media (min-width: 768px) {
+    .container-small {
+        width: 600px;
+    }
+    .container-large {
+        width: 970px;
+    } 
+} 
+@media (min-width: 992px) {
+    .container-small {
+        width: 700px;
+    }
+    .container-large {
+        width: 1170px;
+    } 
+} 
+@media (min-width: 1200px) {
+    .container-small {
+        width: 800px;
+    }
+    .container-large {
+        width: 1500px;
+    } 
+}
+
+.container-small, .container-large {
+    max-width: 100%;
+}
+
