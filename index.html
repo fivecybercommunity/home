@@ -36,7 +36,7 @@
   </div>
 
   <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark container-large top-navbar m-auto">
     <div class="container-fluid ms-md-5">
       <a class="navbar-brand d-flex" href="#">
         <img src="photos/logo compressed.png" class="pe-3" style="max-height: 40px" alt="logo" />
@@ -47,7 +47,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 float-end" style = "text-align : right;">
           <li class="nav-item pe-5">
             <a class="nav-link font-primary" href="#">PROFIL</a>
           </li>
@@ -55,19 +55,18 @@
             <a class="nav-link font-primary" href="#">KEGIATAN</a>
           </li>
           <li class="nav-item pe-5">
-            <a class="nav-link font-primary" href="#">KARYA-KARYA</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-outline-light font-primary" role="button" href="#">FORM PENDAFTARAN</a>
+            <a class="nav-link font-primary" href="#">KARYA</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- Side Navbar-->
+
   <!-- Jumbotron -->
   <div class="row container-fluid d-flex justify-content-center ps-0 pe-0" style="height: 100vh">
-    <div class="jumbotron text-center m-auto">
+    <div class="jumbotron text-center m-auto pe-0">
       <img src="photos/logo compressed.png" class="img-fluid" alt="Logo Ekskul" />
       <section class="jumbotron-text">
         <section class="jumbotron-texta">
@@ -247,12 +246,6 @@
       </div>
     </footer>
   </section>
-
-  <script>
-    $(window).on("load", function () {
-      $(".loader-wrapper").fadeOut("slow");
-    });
-  </script>
   <script src="/js/script.js" defer></script>
 </body>
 

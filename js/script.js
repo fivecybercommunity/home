@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+// Loader
+$(window).on("load", function () {
+    $(".loader-wrapper").fadeOut("slow");
+  });
+
+=======
+>>>>>>> aa9449e80b443c5b2e2a3a0b57948e4d43a18389
 // Loop every 150 ms and stop at 100 times run
 var timesrun = 0;
 var interval = setInterval(function () {

@@ -1,7 +1,15 @@
+<<<<<<< HEAD
+@import "./fonts";
+@import "./loader";
+@import "./internal";
+@import "./navbar";
+@import "./customize";
+=======
 @import "scss/fonts";
 @import "scss/loader";
 @import "scss/internal";
 @import "scss/customize";
+>>>>>>> aa9449e80b443c5b2e2a3a0b57948e4d43a18389
 
 html {
   scroll-behavior: smooth;
@@ -28,7 +36,7 @@ body {
     width: 700px;
   }
   .container-large {
-    width: 1170px;
+    width: 900px;
   }
 }
 @media (min-width: 1200px) {
@@ -36,7 +44,7 @@ body {
     width: 800px;
   }
   .container-large {
-    width: 1500px;
+    width: 1000px;
   }
 }
 
