@@ -1,9 +1,11 @@
+
 // Loader
 $(window).on("load", function () {
     $(".loader-wrapper").fadeOut("slow");
   });
 
-// Loop every 150 ms and stop at 100 times run
+// Loop every 150 ms and stop at 100 times run 
+// Mulai Setelah Loader Selesai
 var timesrun = 0;
 var interval = setInterval(function () {
   timesrun += 1;
@@ -15,13 +17,11 @@ var interval = setInterval(function () {
     
     //RAINBOW COLOR CYCLE
     var rainbow = gsap.timeline({yoyo:true,repeat:-1,duration:1.5});
-    
     rainbow.to("html",1,{"--fontColor":"rgba(175, 49, 49, 0.8)"})
     rainbow.to("html",1,{"--fontColor":"rgba(141, 175, 49, 0.8)"})
     rainbow.to("html",1,{"--fontColor":"rgba(49, 171, 175, 0.8)"})
     rainbow.to("html",1,{"--fontColor":"rgba(76, 58, 175, 0.8)"})
     rainbow.to("html",1,{"--fontColor":"rgba(146, 49, 175, 0.8)"})
-
     rainbow.repeat();
 
     // Jumbotron Text Animation
@@ -33,8 +33,9 @@ var interval = setInterval(function () {
     // Scroll Down Indicator
     gsap.fromTo(".scroll-wrapper",{ opacity: 0, y: "200%", duration: 2 },{ opacity: 100, y: "0",delay:4.5 });
     gsap.to(".arrow", {opacity: "100%",y: "30",delay: 1,duration: 1,repeat: "-1",yoyo: true,});
-  
-    gsap.from('.profile-container',{scrollTriger:'.scroll-trigger',opacity:20,duration:2,x:'-100%',delay:2});
+    
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.from(".profile-container",{scrollTriger:".profile-container",opacity:20,duration:2,y:"5%",x:'-100%',delay:2});
 
   }
 }, 150);
