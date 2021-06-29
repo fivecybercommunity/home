@@ -144,17 +144,8 @@
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-html {
-  --fontColor: rgba(255, 255, 255, 0.8);
-  --backgroundColor: #121212;
-}
-
 body {
-  background-color: var(--backgroundColor);
-}
-
-.font-rainbow {
-  color: var(--fontColor);
+  background-color: #121212;
 }
 
 @media (min-width: 768px) {
@@ -195,9 +186,5 @@ body {
 
 .scroll-link {
   text-decoration: none;
-}
-
-.jumbotron-text {
-  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

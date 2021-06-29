@@ -1,25 +1,11 @@
-<<<<<<< HEAD
 @import "./fonts";
 @import "./loader";
 @import "./internal";
 @import "./navbar";
 @import "./customize";
-=======
-@import "scss/fonts";
-@import "scss/loader";
-@import "scss/internal";
-@import "scss/customize";
->>>>>>> aa9449e80b443c5b2e2a3a0b57948e4d43a18389
 
-html {
-  --fontColor: rgba(255, 255, 255, 0.8);
-  --backgroundColor: #121212;
-}
 body {
-  background-color: var(--backgroundColor);
-}
-.font-rainbow {
-  color: var(--fontColor);
+  background-color: #121212;
 }
 
 @media (min-width: 768px) {
@@ -52,13 +38,9 @@ body {
   max-width: 100%;
 }
 
-// COOL ANIMATION
 .scroll-wrapper {
   height: 10%;
 }
 .scroll-link {
   text-decoration: none;
-}
-.jumbotron-text {
-  overflow: hidden;
 }
