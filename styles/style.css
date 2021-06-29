@@ -141,6 +141,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   --fontColor: rgba(255, 255, 255, 0.8);
   --backgroundColor: #121212;
 }
