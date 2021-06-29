@@ -35,7 +35,12 @@ var interval = setInterval(function () {
     gsap.to(".arrow", {opacity: "100%",y: "30",delay: 1,duration: 1,repeat: "-1",yoyo: true,});
     
     gsap.registerPlugin(ScrollTrigger)
-    gsap.from(".profile-container",{scrollTriger:".profile-container",opacity:20,duration:2,y:"5%",x:'-100%',delay:2});
+    gsap.from(".profile-container",{opacity:20,duration:2,y:"5%",x:'-100%',delay:2,
+    scrollTriger:{
+        trigger:".profile-container",
+        makers:true
+      }
+    });
 
   }
 }, 150);
