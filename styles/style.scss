@@ -1,6 +1,7 @@
 @import "./fonts";
 @import "./loader";
 @import "./internal";
+@import "./navbar";
 @import "./customize";
 
 body {
@@ -20,7 +21,7 @@ body {
     width: 700px;
   }
   .container-large {
-    width: 1170px;
+    width: 900px;
   }
 }
 @media (min-width: 1200px) {
@@ -28,7 +29,7 @@ body {
     width: 800px;
   }
   .container-large {
-    width: 1500px;
+    width: 1000px;
   }
 }
 

@@ -1,3 +1,7 @@
+// Loader
+$(window).on("load", function () {
+    $(".loader-wrapper").fadeOut("slow");
+  });
 
 // Loop every 150 ms and stop at 100 times run
 var timesrun = 0;
