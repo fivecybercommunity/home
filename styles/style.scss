@@ -1,8 +1,8 @@
-@import "./fonts";
-@import "./loader";
-@import "./internal";
-@import "./navbar";
-@import "./customize";
+@import "./scss/fonts";
+@import "./scss/loader";
+@import "./scss/internal";
+@import "./scss/navbar";
+@import "./scss/customize";
 
 html {
   scroll-behavior: smooth;
@@ -11,9 +11,6 @@ html {
 }
 body {
   background-color: var(--backgroundColor);
-}
-.font-rainbow {
-  color: var(--fontColor);
 }
 
 @media (min-width: 768px) {
@@ -41,6 +38,10 @@ body {
   }
 }
 
+.font-rainbow {
+  color: var(--fontColor);
+}
+
 .container-small,
 .container-large {
   max-width: 100%;
@@ -55,4 +56,8 @@ body {
 }
 .jumbotron-text {
   overflow: hidden;
+}
+
+.hasil-kami-wrapper {
+  overflow: scroll;
 }

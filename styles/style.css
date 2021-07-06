@@ -154,10 +154,6 @@ body {
   background-color: var(--backgroundColor);
 }
 
-.font-rainbow {
-  color: var(--fontColor);
-}
-
 @media (min-width: 768px) {
   .container-small {
     width: 600px;
@@ -185,6 +181,10 @@ body {
   }
 }
 
+.font-rainbow {
+  color: var(--fontColor);
+}
+
 .container-small,
 .container-large {
   max-width: 100%;
@@ -200,5 +200,9 @@ body {
 
 .jumbotron-text {
   overflow: hidden;
+}
+
+.hasil-kami-wrapper {
+  overflow: scroll;
 }
 /*# sourceMappingURL=style.css.map */

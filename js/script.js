@@ -11,6 +11,9 @@ var interval = setInterval(function () {
   timesrun += 1;
   if (timesrun === 100 ||document.getElementsByClassName("loader-wrapper").display === undefined) {
     clearInterval(interval);
+
+    gsap.registerPlugin(ScrollTrigger);
+    
     gsap.from(".navbar", { duration: 2, y: "-100%", ease: "bounce" });
     //gsap.from(".jumbotron", { opacity: 0, duration: 2, y: "-8%", x: "-50" });
 
@@ -34,12 +37,39 @@ var interval = setInterval(function () {
     gsap.fromTo(".scroll-wrapper",{ opacity: 0, y: "200%", duration: 2 },{ opacity: 100, y: "0",delay:4.5 });
     gsap.to(".arrow", {opacity: "100%",y: "30",delay: 1,duration: 1,repeat: "-1",yoyo: true,});
     
-    gsap.registerPlugin(ScrollTrigger)
-    gsap.from(".profile-container",{opacity:20,duration:2,y:"5%",x:'-100%',delay:2,
-    scrollTriger:{
+    gsap.from(".profile-container",{
+      scrollTrigger:{
         trigger:".profile-container",
-        makers:true
-      }
+        start:"-50px center",
+        end:"800px center",
+        toggleActions:"play reverse play reverse",
+        // uncomment to see the trigger
+        //markers:true
+      },
+      duration:0.5,
+      x:-300
+    });
+
+    gsap.from(".kegiatan-wrapper",{
+      scrollTrigger:{
+        trigger:".kegiatan-wrapper",
+        start:"-50px center",
+        end:"1000px center",
+        toggleActions:"play reverse play reverse",
+        //markers:true 
+      },
+      duration:0.5,
+      x:300
+    });
+
+    gsap.from(".hasil-karya-wrapper",{
+      scrollTrigger:{
+        trigger:".hasil-karya-wrapper",
+        start:"-1000px center",
+        toggleActions:"play restart restart none"
+       //markers:true
+      },
+      opacity:'50%',y:'100%',duration:2
     });
 
   }
