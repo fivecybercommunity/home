@@ -1,0 +1,22 @@
+@import 'font-colors';
+
+.jumbotron {
+    height : 100vh;
+    width : 100%;
+    
+    h1 {
+        color : $primary-color;
+        font-family : $primary-font;
+        font-weight : bold;
+        font-size : 32px;
+        text-align : center;
+    }
+
+    h2 {
+        color : $secondary-color;
+        font-family : $secondary-font;
+        font-weight : light;
+        font-size : 24px;
+        text-align : center;
+    }
+}
