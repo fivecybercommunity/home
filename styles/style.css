@@ -232,6 +232,53 @@ footer .logo {
   }
 }
 
+.siapa_container {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.siapa_container h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.siapa_container h2 {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.siapa_container .siapa_title h1 {
+  text-align: center;
+}
+
+.siapa_container .siapa_text {
+  margin-left: 50px;
+  width: 350px;
+}
+
 .divisi_container {
   height: 100vh;
   width: 100%;
@@ -294,7 +341,6 @@ footer .logo {
 .divisi_container .divisi_developer .divisi_developer_text .divisi_developer_text_title {
   margin-right: -40px;
   margin-bottom: 10px;
-  color: red;
 }
 
 .divisi_container .divisi_developer svg {
@@ -316,7 +362,6 @@ footer .logo {
 .divisi_container .divisi_designer .divisi_designer_text .divisi_designer_text_title {
   margin-left: -40px;
   margin-bottom: 10px;
-  color: red;
 }
 
 .divisi_container .divisi_designer svg {

@@ -14,6 +14,34 @@
   user-select: none;
 }
 
+.siapa_container {
+  @include containerFlex();
+
+  flex-direction: row;
+
+  h1 {
+    color: $primary-color;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  h2 {
+    color: $secondary-color;
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .siapa_title {
+    h1 {
+      text-align: center;
+    }
+  }
+  .siapa_text {
+    margin-left: 50px;
+    width: 350px;
+  }
+}
+
 .divisi_container {
   //border: 2px solid yellow;
   @include containerFlex();
@@ -48,7 +76,6 @@
       .divisi_developer_text_title {
         margin-right: -40px;
         margin-bottom: 10px;
-        color: red;
       }
     }
     svg {
@@ -65,7 +92,6 @@
       .divisi_designer_text_title {
         margin-left: -40px;
         margin-bottom: 10px;
-        color: red;
       }
     }
     svg {
