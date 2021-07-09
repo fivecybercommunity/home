@@ -1,109 +1,109 @@
-@import 'font-colors';
+@import "font-colors";
 
-::-webkit-scrollbar{
-    width : 10px;
+::-webkit-scrollbar {
+  width: 10px;
 }
-::-webkit-scrollbar-thumb{
-    border-radius : 15px;
-    background : rgba($color: #fff, $alpha: 0.5);
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: rgba($color: #fff, $alpha: 0.5);
 }
-::selection{
-    color : black;
-    background : white;
+::selection {
+  color: black;
+  background: white;
 }
 
 body {
-    background-color : #121212 !important;
+  background-color: lightblue !important;
 }
 
 * {
-    padding : 0;
-    margin : 0;
+  padding: 0;
+  margin: 0;
 }
 header {
-    display : flex;
-    flex-direction : row;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  .logo {
+    height: 40px;
+    width: auto;
+  }
+  .navbar {
+    display: flex;
     justify-content: space-between;
-    align-items : center;
-    user-select : none;
-    .logo {
-        height : 40px;
-        width : auto;
+    align-items: center;
+    padding: 20px 10%;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li,
+  a {
+    text-decoration: none;
+    font-family: $primary-font;
+    color: $secondary-color;
+    font-size: 16px;
+    display: inline-block;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+  li a {
+    transition: all 0.5s ease 0s;
+    &:hover {
+      color: $selected-color;
     }
-    .navbar {
-        display : flex;
-        justify-content : space-between;
-        align-items : center;
-        padding : 20px 10%;
+  }
+  button {
+    text-decoration: none;
+    border: none;
+    font-family: $primary-font;
+    color: rgba($color: #121212, $alpha: 1);
+    background-color: rgba($color: #ffffff, $alpha: 1);
+    padding: 9px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    &:hover {
+      color: rgba($color: #ffffff, $alpha: 1);
+      background-color: rgba($color: #121212, $alpha: 1);
     }
-    ul {
-        list-style-type : none;
-    }
-    li, a {
-        text-decoration : none;
-        font-family : $primary-font;
-        color : $secondary-color;
-        font-size : 16px;
-        display : inline-block;
-        padding : 0 20px;
-        cursor : pointer;
-    }
-    li a {
-        transition : all 0.5s ease 0s;
-        &:hover {
-            color : $selected-color;
-        }
-    }
-    button {
-        text-decoration : none;
-        border : none;
-        font-family : $primary-font;
-        color : rgba($color: #121212, $alpha: 1.0);
-        background-color : rgba($color: #ffffff, $alpha: 1.0);
-        padding : 9px 25px;
-        border-radius : 50px;
-        cursor : pointer;
-        transition : all 0.5s ease 0s;
-        &:hover {
-            color : rgba($color: #ffffff, $alpha: 1.0);
-            background-color : rgba($color: #121212, $alpha: 1.0);
-        }
-    }
+  }
 }
 
 footer {
-    background-color : rgba($color: #ffffff, $alpha: 0.3);
-    display : flex;
-    flex-direction : column;
-    justify-content : center;
-    align-items : center;
-    padding : 20px;
-    p {
-        font-family : $secondary-font;
-        font-size : 16px;
-        text-align : center;
-    }
-    .social-media {
-        display : flex;
-        flex-direction : row;
-        justify-content: center;
-    }
-    .logo {
-        margin : 20px;
-        color : white;
-        border : solid;
-        border-color : rgba($color: #ffffff, $alpha: 1.0);
-        padding : 10px;
-        border-radius : 5px;
-        border-width : thin;
-    }
+  background-color: rgba($color: #ffffff, $alpha: 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  p {
+    font-family: $secondary-font;
+    font-size: 16px;
+    text-align: center;
+  }
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .logo {
+    margin: 20px;
+    color: white;
+    border: solid;
+    border-color: rgba($color: #ffffff, $alpha: 1);
+    padding: 10px;
+    border-radius: 5px;
+    border-width: thin;
+  }
 }
 .copyright {
-    background-color : rgba($color: #ffffff, $alpha: 0.1) !important;
-    text-align : center;
-    padding : 10px;
-    font-family : $primary-font;
-    font-size : 14px;
-    color : rgba($color: #ffffff, $alpha: 8.0);
+  background-color: rgba($color: #ffffff, $alpha: 0.1) !important;
+  text-align: center;
+  padding: 10px;
+  font-family: $primary-font;
+  font-size: 14px;
+  color: rgba($color: #ffffff, $alpha: 8);
 }
-

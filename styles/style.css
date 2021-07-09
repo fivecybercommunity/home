@@ -24,7 +24,7 @@
 }
 
 body {
-  background-color: #121212 !important;
+  background-color: lightblue !important;
 }
 
 * {
@@ -74,7 +74,8 @@ header ul {
   list-style-type: none;
 }
 
-header li, header a {
+header li,
+header a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   color: rgba(255, 255, 255, 0.6);
@@ -229,5 +230,98 @@ footer .logo {
   .container {
     width: 900px;
   }
+}
+
+.kegiatan_container {
+  border: 2px solid yellow;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.kegiatan_container h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.kegiatan_container h2 {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.kegiatan_container .kegiatan_title {
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.kegiatan_container .kegiatan_title .kegiatan_title_text {
+  margin-right: 20px;
+}
+
+.kegiatan_container .kegiatan_bersama {
+  border: 2px solid blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
+}
+
+.kegiatan_container .kegiatan_bersama svg {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.kegiatan_container .kegiatan_bersama img {
+  width: 480px;
+}
+
+.kegiatan_container .kegiatan_bersama .kegiatan_bersama_text {
+  width: 350px;
+}
+
+.kegiatan_container .kegiatan_project {
+  border: 2px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.kegiatan_container .kegiatan_project svg {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.kegiatan_container .kegiatan_project img {
+  width: 480px;
+}
+
+.kegiatan_container .kegiatan_project .kegiatan_project_text {
+  text-align: right;
+  width: 350px;
 }
 /*# sourceMappingURL=style.css.map */
