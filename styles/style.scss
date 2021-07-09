@@ -4,8 +4,19 @@
 
 // Aku ngga ngerti kamu pisahinnya gimana jadi nulis di sini
 
-.kegiatan_container {
-  border: 2px solid yellow;
+@mixin containerFlex {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.divisi_container {
+  //border: 2px solid yellow;
+  @include containerFlex();
   h1 {
     color: $primary-color;
     font-family: $primary-font;
@@ -18,28 +29,85 @@
     font-weight: 400;
     font-size: 16px;
   }
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  .divisi_title {
+    //border: 2px solid red;
+    display: flex;
+    margin-bottom: 70px;
+    .divisi_title_text {
+      margin-left: 20px;
+    }
+  }
+  .divisi_developer {
+    //border: 2px solid blue;
+    display: flex;
+    margin-bottom: 50px;
+    .divisi_developer_text {
+      width: 350px;
+      text-align: right;
+      .divisi_developer_text_title {
+        margin-right: -40px;
+        margin-bottom: 10px;
+        color: red;
+      }
+    }
+    svg {
+      margin-left: 50px;
+      width: 300px;
+      height: 250px;
+    }
+  }
+  .divisi_designer {
+    //border: 2px solid green;
+    display: flex;
+    .divisi_designer_text {
+      width: 350px;
+      .divisi_designer_text_title {
+        margin-left: -40px;
+        margin-bottom: 10px;
+        color: red;
+      }
+    }
+    svg {
+      margin-right: 50px;
+      width: 300px;
+      height: 250px;
+    }
+  }
+}
+
+.kegiatan_container {
+  //border: 2px solid yellow;
+  @include containerFlex();
+
+  h1 {
+    color: $primary-color;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  h2 {
+    color: $secondary-color;
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 16px;
+  }
 
   .kegiatan_title {
-    border: 2px solid red;
+    //border: 2px solid red;
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
     .kegiatan_title_text {
       margin-right: 20px;
     }
   }
 
   .kegiatan_bersama {
-    border: 2px solid blue;
+    //border: 2px solid blue;
     display: flex;
-    justify-content: center;
     margin-bottom: 100px;
     svg {
+      margin: auto;
       margin-right: 20px;
       margin-left: 20px;
     }
@@ -47,14 +115,19 @@
       width: 480px;
     }
     .kegiatan_bersama_text {
-      width: 350px;
+      width: 300px;
+      .kegiatan_bersama_text_title {
+        margin-bottom: 20px;
+      }
     }
   }
+
   .kegiatan_project {
-    border: 2px solid green;
+    //border: 2px solid green;
     display: flex;
     justify-content: center;
     svg {
+      margin: auto;
       margin-right: 20px;
       margin-left: 20px;
     }
@@ -63,7 +136,22 @@
     }
     .kegiatan_project_text {
       text-align: right;
-      width: 350px;
+      width: 300px;
+      .kegiatan_project_text_title {
+        margin-bottom: 20px;
+      }
     }
   }
+}
+
+.spacing {
+  @include containerFlex();
+  h1 {
+    color: $primary-color;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  width: 100%;
+  height: 30vh;
 }
