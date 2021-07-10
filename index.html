@@ -11,6 +11,10 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css" />
 
+    <!-- GSap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+
     <!-- Bootstrap CSS 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -102,9 +106,9 @@
       </div>
       <div class="kegiatan_bersama">
         <img src="./photos/Kegiatan Online.jpg">
-        <svg width="4" height="198" viewBox="0 0 4 198" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line x1="1.49998" y1="0.992386" x2="2.49998" y2="197.992" stroke="white" stroke-width="3"/>
-        </svg>     
+        <svg width="5" height="211" viewBox="0 0 5 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="1.49998" y1="0.992386" x2="2.56596" y2="210.99" stroke="white" stroke-width="3"/>
+        </svg>               
         <div class="kegiatan_bersama_text">
           <h1 class="kegiatan_bersama_text_title">Kegiatan Bersama</h1>
           <h2>Sebelum memulai suatu project, kami terlebih dahulu mengadakan pertemuan untuk membahas topik-topik mengenai hal yang diperlukan project agar setiap anggota dapat ikut serta dalam pelaksanaan project</h2>
@@ -115,11 +119,13 @@
           <h1 class="kegiatan_project_text_title">Project Ekskul</h1>
           <h2>Di akhir bab biasanya kami melaksanakan suatu project yang dikerjakan oleh anggota ekstrakurikuler agar memperdalam pemahaman tentang hal yang telah dipelajari bersama sebelumnya.</h2>
         </div>
-        <svg width="4" height="198" viewBox="0 0 4 198" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line x1="1.49998" y1="0.992386" x2="2.49998" y2="197.992" stroke="white" stroke-width="3"/>
+        <svg width="5" height="211" viewBox="0 0 5 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="1.49998" y1="0.992386" x2="2.56596" y2="210.99" stroke="white" stroke-width="3"/>
         </svg>
         <img src="./photos/Kegiatan Offline Compressed.png">
       </div>
+      <retangle class="kegiatan_anim_hider1"></retangle>
+      <retangle class="kegiatan_anim_hider2"></retangle>
     </div>
 
     <div class="spacing">
@@ -150,6 +156,8 @@
       </div>
     </footer>
     <div class="copyright">FIVECYBERCOMMUNITY - 2021</div>
+
+    <script src="./scripts/script.js"></script>
 
     <!-- Font Awesome -->
     <script

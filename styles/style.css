@@ -390,6 +390,7 @@ footer .logo {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  overflow: hidden;
 }
 
 .kegiatan_container h1 {
@@ -435,7 +436,9 @@ footer .logo {
 }
 
 .kegiatan_container .kegiatan_bersama .kegiatan_bersama_text {
+  margin-top: 20px;
   width: 300px;
+  z-index: -3;
 }
 
 .kegiatan_container .kegiatan_bersama .kegiatan_bersama_text .kegiatan_bersama_text_title {
@@ -463,11 +466,33 @@ footer .logo {
 
 .kegiatan_container .kegiatan_project .kegiatan_project_text {
   text-align: right;
+  margin-top: 20px;
+  z-index: -3;
   width: 300px;
 }
 
 .kegiatan_container .kegiatan_project .kegiatan_project_text .kegiatan_project_text_title {
   margin-bottom: 20px;
+}
+
+.kegiatan_container .kegiatan_anim_hider1 {
+  position: absolute;
+  background-color: #121212;
+  margin-left: -120px;
+  margin-top: -220px;
+  height: 245px;
+  width: 300px;
+  z-index: -2;
+}
+
+.kegiatan_container .kegiatan_anim_hider2 {
+  position: absolute;
+  background-color: #121212;
+  margin-left: 120px;
+  margin-top: 466px;
+  height: 245px;
+  width: 300px;
+  z-index: -2;
 }
 
 .spacing {

@@ -16,7 +16,6 @@
 
 .siapa_container {
   @include containerFlex();
-
   flex-direction: row;
 
   h1 {
@@ -66,6 +65,7 @@
       margin-left: 20px;
     }
   }
+
   .divisi_developer {
     //border: 2px solid blue;
     display: flex;
@@ -84,6 +84,7 @@
       height: 250px;
     }
   }
+
   .divisi_designer {
     //border: 2px solid green;
     display: flex;
@@ -105,7 +106,7 @@
 .kegiatan_container {
   //border: 2px solid yellow;
   @include containerFlex();
-
+  overflow: hidden;
   h1 {
     color: $primary-color;
     font-family: $primary-font;
@@ -141,7 +142,9 @@
       width: 480px;
     }
     .kegiatan_bersama_text {
+      margin-top: 20px;
       width: 300px;
+      z-index: -3;
       .kegiatan_bersama_text_title {
         margin-bottom: 20px;
       }
@@ -162,11 +165,32 @@
     }
     .kegiatan_project_text {
       text-align: right;
+      margin-top: 20px;
+      z-index: -3;
       width: 300px;
       .kegiatan_project_text_title {
         margin-bottom: 20px;
       }
     }
+  }
+
+  .kegiatan_anim_hider1 {
+    position: absolute;
+    background-color: #121212;
+    margin-left: -120px;
+    margin-top: -220px;
+    height: 245px;
+    width: 300px;
+    z-index: -2;
+  }
+  .kegiatan_anim_hider2 {
+    position: absolute;
+    background-color: #121212;
+    margin-left: 120px;
+    margin-top: 466px;
+    height: 245px;
+    width: 300px;
+    z-index: -2;
   }
 }
 
