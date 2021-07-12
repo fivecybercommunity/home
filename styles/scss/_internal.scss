@@ -72,6 +72,9 @@ header {
       background-color: rgba($color: #ffffff, $alpha: 1);
     }
   }
+  .icon {
+    display : none;
+  }
 }
 
 footer {
@@ -114,4 +117,15 @@ footer {
   font-family: $primary-font;
   font-size: 14px;
   color: rgba($color: #ffffff, $alpha: 1);
+}
+
+@media (min-width : 300px) {
+  
+}
+
+@media (min-width : 768px) {
+  
+}
+@media (min-width : 1080px) {
+  
 }
