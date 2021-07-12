@@ -31,6 +31,45 @@
     margin : 0 auto;
 }
 
+.end {
+    height : 100vh;
+    width : 100%;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    flex-direction : column;
+    user-select: none;
+    h1 {
+        color : $primary-color;
+        font-family : $primary-font;
+        font-weight : 700;
+        font-size : 24px;
+    }
+    h2 {
+        color : $secondary-color;
+        font-family : $secondary-font;
+        font-weight : 400;
+        font-size : 16px;
+    }
+    button {
+        text-decoration: none;
+        border-color : rgba($color: #ffffff, $alpha: 1.0);
+        border-style: solid;
+        border-width : 1.4px;
+        font-family: $primary-font;
+        color: rgba($color: #ffffff, $alpha: 1);
+        background-color: rgba($color: #121212, $alpha: 1);
+        padding: 9px 25px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.5s ease 0s;
+        &:hover {
+          color: rgba($color: #121212, $alpha: 1);
+          background-color: rgba($color: #ffffff, $alpha: 1);
+        }
+      }
+}
+
 $bp-ponsel : 300px;
 $bp-tablet : 768px;
 $bp-desktop : 1080px;

@@ -96,10 +96,12 @@ header li a:hover {
 
 header button {
   text-decoration: none;
-  border: none;
+  border-color: white;
+  border-style: solid;
+  border-width: 1.4px;
   font-family: "Montserrat", sans-serif;
-  color: #121212;
-  background-color: white;
+  color: white;
+  background-color: #121212;
   padding: 9px 25px;
   border-radius: 50px;
   cursor: pointer;
@@ -108,12 +110,12 @@ header button {
 }
 
 header button:hover {
-  color: white;
-  background-color: #121212;
+  color: #121212;
+  background-color: white;
 }
 
 footer {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(158, 168, 255, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,11 +129,12 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px;
+  padding: 40px 0px 20px 0px;
 }
 
 footer p {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: white;
   font-size: 16px;
   text-align: center;
 }
@@ -154,13 +157,20 @@ footer .logo {
   color: white;
   border: solid;
   border-color: white;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 13px;
+  border-radius: 50px;
   border-width: thin;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+footer .logo:hover {
+  color: #20212a;
+  background-color: white;
 }
 
 .copyright {
-  background-color: rgba(255, 255, 255, 0.1) !important;
+  background-color: rgba(158, 168, 255, 0.05) !important;
   text-align: center;
   padding: 10px;
   font-family: "Montserrat", sans-serif;
@@ -212,6 +222,62 @@ footer .logo {
 .container {
   width: 1080px;
   margin: 0 auto;
+}
+
+.end {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.end h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.end h2 {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.end button {
+  text-decoration: none;
+  border-color: white;
+  border-style: solid;
+  border-width: 1.4px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-color: #121212;
+  padding: 9px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.end button:hover {
+  color: #121212;
+  background-color: white;
 }
 
 @media (min-width: 300px) {
