@@ -4,6 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -112,6 +114,10 @@ header button {
 header button:hover {
   color: #121212;
   background-color: white;
+}
+
+header .icon {
+  display: none;
 }
 
 footer {
@@ -298,6 +304,431 @@ footer .logo:hover {
   }
 }
 
+.kegiatan_wrapper {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-x: hidden;
+}
+
+.kegiatan_wrapper .kegiatan_container {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height: 100vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.kegiatan_wrapper .kegiatan_container .kegiatan_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.kegiatan_wrapper .kegiatan_container .kegiatan_title svg {
+  margin-left: 25px;
+}
+
+.kegiatan_wrapper .kegiatan_container .kegiatan_bersama {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_svg1 {
+  margin: auto;
+  padding: 20px;
+}
+
+.kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_svg2 {
+  display: none;
+}
+
+.kegiatan_wrapper .kegiatan_container .kegiatan_bersama img {
+  width: 500px;
+  margin: auto;
+}
+
+.kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_text {
+  width: 350px;
+  margin-top: 30px;
+  z-index: -3;
+}
+
+.kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_text .kegiatan_bersama_text_title {
+  margin-bottom: 30px;
+}
+
+.kegiatan_wrapper .kegiatan_container .kegiatan_project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_svg1 {
+  margin: auto;
+  padding: 20px;
+}
+
+.kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_svg2 {
+  display: none;
+}
+
+.kegiatan_wrapper .kegiatan_container .kegiatan_project img {
+  width: 500px;
+  margin: auto;
+}
+
+.kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_text {
+  width: 300px;
+  text-align: right;
+  margin-top: 30px;
+  z-index: -3;
+}
+
+.kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_text .kegiatan_project_text_title {
+  margin-bottom: 30px;
+}
+
+.kegiatan_wrapper .kegiatan_container .kegiatan_anim_hider1 {
+  position: absolute;
+  background-color: #121212;
+  margin-left: -150px;
+  margin-top: -220px;
+  height: 245px;
+  width: 300px;
+  z-index: -2;
+}
+
+.kegiatan_wrapper .kegiatan_container .kegiatan_anim_hider2 {
+  position: absolute;
+  background-color: #121212;
+  margin-left: 100px;
+  margin-top: 500px;
+  height: 245px;
+  width: 300px;
+  z-index: -2;
+}
+
+@media (max-width: 1000px) {
+  .kegiatan_wrapper {
+    height: 130vh;
+  }
+  .kegiatan_wrapper .kegiatan_container {
+    height: 120vh;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_text {
+    width: 500px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_text .kegiatan_bersama_text_title {
+    margin-bottom: 15px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_svg1 {
+    display: none;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_svg2 {
+    display: inline;
+    margin: auto;
+    padding: 20px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_text {
+    width: 500px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_text .kegiatan_project_text_title {
+    margin-bottom: 15px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_svg1 {
+    display: none;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_svg2 {
+    display: inline;
+    margin: auto;
+    padding: 20px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_anim_hider1,
+  .kegiatan_wrapper .kegiatan_container .kegiatan_anim_hider2 {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .kegiatan_wrapper .kegiatan_container .kegiatan_title svg {
+    width: 430px;
+  }
+}
+
+@media (max-width: 630px) {
+  .kegiatan_wrapper .kegiatan_container .kegiatan_title svg {
+    width: 380px;
+  }
+}
+
+@media (max-width: 580px) {
+  .kegiatan_wrapper {
+    height: 115vh;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_title {
+    margin-bottom: 0px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_title svg {
+    margin-left: 20px;
+    width: 280px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_text {
+    width: 400px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama img {
+    width: 380px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_svg2 {
+    width: 320px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_text {
+    width: 400px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project img {
+    width: 380px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_svg2 {
+    width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kegiatan_wrapper h1 {
+    font-size: 20px;
+  }
+  .kegiatan_wrapper h2 {
+    font-size: 15px;
+  }
+  .kegiatan_wrapper .kegiatan_container {
+    height: 110vh;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_title svg {
+    width: 230px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_text {
+    width: 300px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama img {
+    width: 330px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_svg2 {
+    width: 280px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_text {
+    width: 300px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project img {
+    width: 330px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_svg2 {
+    width: 280px;
+  }
+}
+
+@media (max-width: 390px) {
+  .kegiatan_wrapper {
+    height: 110vh;
+  }
+  .kegiatan_wrapper h1 {
+    font-size: 18px;
+  }
+  .kegiatan_wrapper h2 {
+    font-size: 13px;
+  }
+  .kegiatan_wrapper .kegiatan_container {
+    height: 105vh;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_title svg {
+    margin: auto;
+    margin-left: 10px;
+    width: 200px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_text {
+    width: 260px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama img {
+    width: 300px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_svg2 {
+    width: 270px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_text {
+    width: 260px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project img {
+    width: 300px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_svg2 {
+    width: 270px;
+  }
+}
+
+@media (max-width: 340px) {
+  .kegiatan_wrapper {
+    height: 105vh;
+  }
+  .kegiatan_wrapper h1 {
+    font-size: 16px;
+  }
+  .kegiatan_wrapper h2 {
+    font-size: 12px;
+  }
+  .kegiatan_wrapper .kegiatan_container {
+    height: 100vh;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_title svg {
+    width: 180px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_text {
+    width: 260px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama img {
+    width: 260px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_svg2 {
+    width: 230px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_text {
+    width: 260px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project img {
+    width: 260px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_svg2 {
+    width: 230px;
+  }
+}
+
+@media (max-width: 300px) {
+  .kegiatan_wrapper {
+    height: 105vh;
+  }
+  .kegiatan_wrapper h1 {
+    font-size: 16px;
+  }
+  .kegiatan_wrapper h2 {
+    font-size: 12px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_title svg {
+    width: 150px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_text {
+    width: 260px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama img {
+    width: 250px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama .kegiatan_bersama_svg2 {
+    width: 230px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_text {
+    width: 260px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project img {
+    width: 250px;
+  }
+  .kegiatan_wrapper .kegiatan_container .kegiatan_project .kegiatan_project_svg2 {
+    width: 230px;
+  }
+}
+
+@media (max-height: 700px) {
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-height: 650px) {
+  .kegiatan_wrapper .kegiatan_container .kegiatan_bersama {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html h1,
+body h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+html h2,
+body h2 {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
 .siapa_container {
   height: 100vh;
   width: 100%;
@@ -318,6 +749,9 @@ footer .logo:hover {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  height: 80vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-direction: row;
       flex-direction: row;
 }
@@ -385,7 +819,7 @@ footer .logo:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 140px;
 }
 
 .divisi_container .divisi_title .divisi_title_text {
@@ -396,7 +830,7 @@ footer .logo:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .divisi_container .divisi_developer .divisi_developer_text {
@@ -434,161 +868,5 @@ footer .logo:hover {
   margin-right: 50px;
   width: 300px;
   height: 250px;
-}
-
-.kegiatan_container {
-  height: 100vh;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  overflow: hidden;
-}
-
-.kegiatan_container h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-}
-
-.kegiatan_container h2 {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.kegiatan_container .kegiatan_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 90px;
-}
-
-.kegiatan_container .kegiatan_title .kegiatan_title_text {
-  margin-right: 20px;
-}
-
-.kegiatan_container .kegiatan_bersama {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 100px;
-}
-
-.kegiatan_container .kegiatan_bersama svg {
-  margin: auto;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.kegiatan_container .kegiatan_bersama img {
-  width: 480px;
-}
-
-.kegiatan_container .kegiatan_bersama .kegiatan_bersama_text {
-  margin-top: 20px;
-  width: 300px;
-  z-index: -3;
-}
-
-.kegiatan_container .kegiatan_bersama .kegiatan_bersama_text .kegiatan_bersama_text_title {
-  margin-bottom: 20px;
-}
-
-.kegiatan_container .kegiatan_project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.kegiatan_container .kegiatan_project svg {
-  margin: auto;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.kegiatan_container .kegiatan_project img {
-  width: 480px;
-}
-
-.kegiatan_container .kegiatan_project .kegiatan_project_text {
-  text-align: right;
-  margin-top: 20px;
-  z-index: -3;
-  width: 300px;
-}
-
-.kegiatan_container .kegiatan_project .kegiatan_project_text .kegiatan_project_text_title {
-  margin-bottom: 20px;
-}
-
-.kegiatan_container .kegiatan_anim_hider1 {
-  position: absolute;
-  background-color: #121212;
-  margin-left: -120px;
-  margin-top: -220px;
-  height: 245px;
-  width: 300px;
-  z-index: -2;
-}
-
-.kegiatan_container .kegiatan_anim_hider2 {
-  position: absolute;
-  background-color: #121212;
-  margin-left: 120px;
-  margin-top: 466px;
-  height: 245px;
-  width: 300px;
-  z-index: -2;
-}
-
-.spacing {
-  height: 100vh;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  width: 100%;
-  height: 30vh;
-}
-
-.spacing h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
 }
 /*# sourceMappingURL=style.css.map */

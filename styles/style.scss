@@ -1,6 +1,7 @@
 @import "scss/internal";
 @import "scss/font-colors";
 @import "scss/container";
+@import "scss/kegiatan";
 
 // Aku ngga ngerti kamu pisahinnya gimana jadi nulis di sini
 
@@ -13,9 +14,27 @@
   align-items: center;
   user-select: none;
 }
-
+html,
+body {
+  overflow-x: hidden;
+  h1 {
+    color: $primary-color;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  h2 {
+    color: $secondary-color;
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
 .siapa_container {
+  //border: 2px solid yellow;
   @include containerFlex();
+  height: 80vh;
+  flex-wrap: wrap;
   flex-direction: row;
 
   h1 {
@@ -60,7 +79,7 @@
   .divisi_title {
     //border: 2px solid red;
     display: flex;
-    margin-bottom: 70px;
+    margin-bottom: 140px;
     .divisi_title_text {
       margin-left: 20px;
     }
@@ -69,7 +88,7 @@
   .divisi_developer {
     //border: 2px solid blue;
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     .divisi_developer_text {
       width: 350px;
       text-align: right;
@@ -101,107 +120,4 @@
       height: 250px;
     }
   }
-}
-
-.kegiatan_container {
-  //border: 2px solid yellow;
-  @include containerFlex();
-  overflow: hidden;
-  h1 {
-    color: $primary-color;
-    font-family: $primary-font;
-    font-weight: 700;
-    font-size: 24px;
-  }
-  h2 {
-    color: $secondary-color;
-    font-family: $secondary-font;
-    font-weight: 400;
-    font-size: 16px;
-  }
-
-  .kegiatan_title {
-    //border: 2px solid red;
-    display: flex;
-    margin-bottom: 90px;
-    .kegiatan_title_text {
-      margin-right: 20px;
-    }
-  }
-
-  .kegiatan_bersama {
-    //border: 2px solid blue;
-    display: flex;
-    margin-bottom: 100px;
-    svg {
-      margin: auto;
-      margin-right: 20px;
-      margin-left: 20px;
-    }
-    img {
-      width: 480px;
-    }
-    .kegiatan_bersama_text {
-      margin-top: 20px;
-      width: 300px;
-      z-index: -3;
-      .kegiatan_bersama_text_title {
-        margin-bottom: 20px;
-      }
-    }
-  }
-
-  .kegiatan_project {
-    //border: 2px solid green;
-    display: flex;
-    justify-content: center;
-    svg {
-      margin: auto;
-      margin-right: 20px;
-      margin-left: 20px;
-    }
-    img {
-      width: 480px;
-    }
-    .kegiatan_project_text {
-      text-align: right;
-      margin-top: 20px;
-      z-index: -3;
-      width: 300px;
-      .kegiatan_project_text_title {
-        margin-bottom: 20px;
-      }
-    }
-  }
-
-  .kegiatan_anim_hider1 {
-    position: absolute;
-    background-color: #121212;
-    margin-left: -120px;
-    margin-top: -220px;
-    height: 245px;
-    width: 300px;
-    z-index: -2;
-  }
-  .kegiatan_anim_hider2 {
-    position: absolute;
-    background-color: #121212;
-    margin-left: 120px;
-    margin-top: 466px;
-    height: 245px;
-    width: 300px;
-    z-index: -2;
-  }
-}
-
-.spacing {
-  @include containerFlex();
-  h1 {
-    color: $primary-color;
-    font-family: $primary-font;
-    font-weight: 700;
-    font-size: 24px;
-  }
-  width: 100%;
-  height: 30vh;
 }

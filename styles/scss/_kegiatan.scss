@@ -1,0 +1,404 @@
+@import "font-colors";
+
+@mixin containerFlex {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.kegiatan_wrapper {
+  @include containerFlex();
+  overflow-x: hidden;
+  .kegiatan_container {
+    @include containerFlex();
+    height: 100vh; // CHANGE THIS FOR HEIGHT SPACE BETWEEN DIV
+    justify-content: space-around;
+
+    .kegiatan_title {
+      //border: 2px solid red;
+      display: flex;
+      margin-bottom: 10px;
+      svg {
+        margin-left: 25px;
+      }
+    }
+
+    .kegiatan_bersama {
+      display: flex;
+      margin-bottom: 0px;
+      .kegiatan_bersama_svg1 {
+        margin: auto;
+        padding: 20px;
+      }
+      .kegiatan_bersama_svg2 {
+        display: none;
+      }
+      img {
+        width: 500px;
+        margin: auto;
+      }
+      .kegiatan_bersama_text {
+        width: 350px;
+        margin-top: 30px;
+        z-index: -3;
+        .kegiatan_bersama_text_title {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .kegiatan_project {
+      display: flex;
+      justify-content: center;
+      .kegiatan_project_svg1 {
+        margin: auto;
+        padding: 20px;
+      }
+      .kegiatan_project_svg2 {
+        display: none;
+      }
+      img {
+        width: 500px;
+        margin: auto;
+      }
+      .kegiatan_project_text {
+        width: 300px;
+        text-align: right;
+        margin-top: 30px;
+        z-index: -3;
+        .kegiatan_project_text_title {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .kegiatan_anim_hider1 {
+      position: absolute;
+      background-color: #121212;
+      margin-left: -150px;
+      margin-top: -220px;
+      height: 245px;
+      width: 300px;
+      z-index: -2;
+    }
+    .kegiatan_anim_hider2 {
+      position: absolute;
+      background-color: #121212;
+      margin-left: 100px;
+      margin-top: 500px;
+      height: 245px;
+      width: 300px;
+      z-index: -2;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .kegiatan_wrapper {
+    height: 130vh;
+    .kegiatan_container {
+      height: 120vh;
+      .kegiatan_bersama {
+        flex-direction: column;
+        .kegiatan_bersama_text {
+          width: 500px;
+          align-self: center;
+          text-align: center;
+          margin-top: 0px;
+          .kegiatan_bersama_text_title {
+            margin-bottom: 15px;
+          }
+        }
+        .kegiatan_bersama_svg1 {
+          display: none;
+        }
+        .kegiatan_bersama_svg2 {
+          display: inline;
+          margin: auto;
+          padding: 20px;
+        }
+      }
+
+      .kegiatan_project {
+        flex-direction: column;
+        .kegiatan_project_text {
+          width: 500px;
+          align-self: center;
+          text-align: center;
+          margin-top: 0px;
+          .kegiatan_project_text_title {
+            margin-bottom: 15px;
+          }
+        }
+        .kegiatan_project_svg1 {
+          display: none;
+        }
+        .kegiatan_project_svg2 {
+          display: inline;
+          margin: auto;
+          padding: 20px;
+        }
+      }
+
+      .kegiatan_anim_hider1,
+      .kegiatan_anim_hider2 {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .kegiatan_wrapper {
+    .kegiatan_container {
+      .kegiatan_title {
+        svg {
+          width: 430px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .kegiatan_wrapper {
+    .kegiatan_container {
+      .kegiatan_title {
+        svg {
+          width: 380px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .kegiatan_wrapper {
+    height: 115vh;
+    .kegiatan_container {
+      .kegiatan_title {
+        margin-bottom: 0px;
+        svg {
+          margin-left: 20px;
+          width: 280px;
+        }
+      }
+      .kegiatan_bersama {
+        .kegiatan_bersama_text {
+          width: 400px;
+        }
+        img {
+          width: 380px;
+        }
+        .kegiatan_bersama_svg2 {
+          width: 320px;
+        }
+      }
+      .kegiatan_project {
+        .kegiatan_project_text {
+          width: 400px;
+        }
+        img {
+          width: 380px;
+        }
+        .kegiatan_project_svg2 {
+          width: 320px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .kegiatan_wrapper {
+    h1 {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 15px;
+    }
+    .kegiatan_container {
+      height: 110vh;
+      .kegiatan_title {
+        svg {
+          width: 230px;
+        }
+      }
+      .kegiatan_bersama {
+        .kegiatan_bersama_text {
+          width: 300px;
+        }
+        img {
+          width: 330px;
+        }
+        .kegiatan_bersama_svg2 {
+          width: 280px;
+        }
+      }
+      .kegiatan_project {
+        .kegiatan_project_text {
+          width: 300px;
+        }
+        img {
+          width: 330px;
+        }
+        .kegiatan_project_svg2 {
+          width: 280px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .kegiatan_wrapper {
+    height: 110vh;
+    h1 {
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 13px;
+    }
+    .kegiatan_container {
+      height: 105vh;
+      .kegiatan_title {
+        svg {
+          margin: auto;
+          margin-left: 10px;
+          width: 200px;
+        }
+      }
+      .kegiatan_bersama {
+        .kegiatan_bersama_text {
+          width: 260px;
+        }
+        img {
+          width: 300px;
+        }
+        .kegiatan_bersama_svg2 {
+          width: 270px;
+        }
+      }
+      .kegiatan_project {
+        .kegiatan_project_text {
+          width: 260px;
+        }
+        img {
+          width: 300px;
+        }
+        .kegiatan_project_svg2 {
+          width: 270px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .kegiatan_wrapper {
+    height: 105vh;
+    h1 {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 12px;
+    }
+    .kegiatan_container {
+      height: 100vh;
+      .kegiatan_title {
+        svg {
+          width: 180px;
+        }
+      }
+      .kegiatan_bersama {
+        .kegiatan_bersama_text {
+          width: 260px;
+        }
+        img {
+          width: 260px;
+        }
+        .kegiatan_bersama_svg2 {
+          width: 230px;
+        }
+      }
+      .kegiatan_project {
+        .kegiatan_project_text {
+          width: 260px;
+        }
+        img {
+          width: 260px;
+        }
+        .kegiatan_project_svg2 {
+          width: 230px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 300px) {
+  .kegiatan_wrapper {
+    height: 105vh;
+    h1 {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 12px;
+    }
+    .kegiatan_container {
+      .kegiatan_title {
+        svg {
+          width: 150px;
+        }
+      }
+      .kegiatan_bersama {
+        .kegiatan_bersama_text {
+          width: 260px;
+        }
+        img {
+          width: 250px;
+        }
+        .kegiatan_bersama_svg2 {
+          width: 230px;
+        }
+      }
+      .kegiatan_project {
+        .kegiatan_project_text {
+          width: 260px;
+        }
+        img {
+          width: 250px;
+        }
+        .kegiatan_project_svg2 {
+          width: 230px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 700px) {
+  .kegiatan_wrapper {
+    .kegiatan_container {
+      .kegiatan_bersama {
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-height: 650px) {
+  .kegiatan_wrapper {
+    .kegiatan_container {
+      .kegiatan_bersama {
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
