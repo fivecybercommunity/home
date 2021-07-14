@@ -1,0 +1,63 @@
+html,
+body {
+  h1 {
+    color: $primary-color;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  h2 {
+    color: $secondary-color;
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  html,
+  body {
+    h1 {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  html,
+  body {
+    h1 {
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  html,
+  body {
+    h1 {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  html,
+  body {
+    h1 {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 12px;
+    }
+  }
+}

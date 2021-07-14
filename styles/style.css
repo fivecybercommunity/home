@@ -4,8 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -182,6 +180,66 @@ footer .logo:hover {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: white;
+}
+
+html h1,
+body h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+html h2,
+body h2 {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  html h1,
+  body h1 {
+    font-size: 20px;
+  }
+  html h2,
+  body h2 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 390px) {
+  html h1,
+  body h1 {
+    font-size: 18px;
+  }
+  html h2,
+  body h2 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 390px) {
+  html h1,
+  body h1 {
+    font-size: 16px;
+  }
+  html h2,
+  body h2 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 390px) {
+  html h1,
+  body h1 {
+    font-size: 16px;
+  }
+  html h2,
+  body h2 {
+    font-size: 12px;
+  }
 }
 
 .jumbotron {
@@ -555,12 +613,6 @@ footer .logo:hover {
 }
 
 @media (max-width: 480px) {
-  .kegiatan_wrapper h1 {
-    font-size: 20px;
-  }
-  .kegiatan_wrapper h2 {
-    font-size: 15px;
-  }
   .kegiatan_wrapper .kegiatan_container {
     height: 110vh;
   }
@@ -590,12 +642,6 @@ footer .logo:hover {
 @media (max-width: 390px) {
   .kegiatan_wrapper {
     height: 110vh;
-  }
-  .kegiatan_wrapper h1 {
-    font-size: 18px;
-  }
-  .kegiatan_wrapper h2 {
-    font-size: 13px;
   }
   .kegiatan_wrapper .kegiatan_container {
     height: 105vh;
@@ -629,12 +675,6 @@ footer .logo:hover {
   .kegiatan_wrapper {
     height: 105vh;
   }
-  .kegiatan_wrapper h1 {
-    font-size: 16px;
-  }
-  .kegiatan_wrapper h2 {
-    font-size: 12px;
-  }
   .kegiatan_wrapper .kegiatan_container {
     height: 100vh;
   }
@@ -664,12 +704,6 @@ footer .logo:hover {
 @media (max-width: 300px) {
   .kegiatan_wrapper {
     height: 105vh;
-  }
-  .kegiatan_wrapper h1 {
-    font-size: 16px;
-  }
-  .kegiatan_wrapper h2 {
-    font-size: 12px;
   }
   .kegiatan_wrapper .kegiatan_container .kegiatan_title svg {
     width: 150px;
@@ -708,27 +742,6 @@ footer .logo:hover {
   }
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
-html h1,
-body h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-}
-
-html h2,
-body h2 {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-}
-
 .siapa_container {
   height: 100vh;
   width: 100%;
@@ -750,33 +763,110 @@ body h2 {
       -ms-user-select: none;
           user-select: none;
   height: 80vh;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-direction: row;
       flex-direction: row;
-}
-
-.siapa_container h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-}
-
-.siapa_container h2 {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
 }
 
 .siapa_container .siapa_title h1 {
   text-align: center;
 }
 
+.siapa_container .siapa_title svg {
+  width: 500px;
+}
+
+.siapa_container .siapa_title img {
+  position: absolute;
+  width: 480px;
+  margin-top: -20px;
+}
+
 .siapa_container .siapa_text {
   margin-left: 50px;
   width: 350px;
+}
+
+@media (max-width: 900px) {
+  .siapa_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .siapa_container .siapa_text {
+    text-align: center;
+    margin-left: 0px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 580px) {
+  .siapa_container .siapa_title svg {
+    margin-left: 40px;
+    width: 400px;
+  }
+  .siapa_container .siapa_title img {
+    width: 440px;
+    margin-top: 20px;
+  }
+  .siapa_container .siapa_text {
+    width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .siapa_container .siapa_title svg {
+    margin-left: 30px;
+    width: 350px;
+  }
+  .siapa_container .siapa_title img {
+    width: 380px;
+    margin-top: 30px;
+  }
+  .siapa_container .siapa_text {
+    width: 340px;
+  }
+}
+
+@media (max-width: 390px) {
+  .siapa_container .siapa_title h1 {
+    margin-bottom: -40px;
+  }
+  .siapa_container .siapa_title svg {
+    margin-left: 15px;
+    width: 300px;
+  }
+  .siapa_container .siapa_title img {
+    width: 300px;
+    margin-top: 60px;
+  }
+  .siapa_container .siapa_text {
+    margin-top: -20px;
+    width: 280px;
+  }
+}
+
+@media (max-width: 320px) {
+  .siapa_container .siapa_title h1 {
+    margin-bottom: -30px;
+  }
+  .siapa_container .siapa_title svg {
+    margin-left: 20px;
+    width: 240px;
+  }
+  .siapa_container .siapa_title img {
+    width: 250px;
+    margin-top: 95px;
+  }
+  .siapa_container .siapa_text {
+    margin-top: -20px;
+    width: 240px;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 .divisi_container {
@@ -799,20 +889,6 @@ body h2 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-}
-
-.divisi_container h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-}
-
-.divisi_container h2 {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
 }
 
 .divisi_container .divisi_title {

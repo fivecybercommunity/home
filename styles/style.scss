@@ -1,7 +1,9 @@
 @import "scss/internal";
 @import "scss/font-colors";
+@import "scss/font-size";
 @import "scss/container";
 @import "scss/kegiatan";
+@import "scss/siapa";
 
 // Aku ngga ngerti kamu pisahinnya gimana jadi nulis di sini
 
@@ -14,67 +16,20 @@
   align-items: center;
   user-select: none;
 }
+
+.jumbotron,
+header {
+  //display: none;
+}
+
 html,
 body {
   overflow-x: hidden;
-  h1 {
-    color: $primary-color;
-    font-family: $primary-font;
-    font-weight: 700;
-    font-size: 24px;
-  }
-  h2 {
-    color: $secondary-color;
-    font-family: $secondary-font;
-    font-weight: 400;
-    font-size: 16px;
-  }
-}
-.siapa_container {
-  //border: 2px solid yellow;
-  @include containerFlex();
-  height: 80vh;
-  flex-wrap: wrap;
-  flex-direction: row;
-
-  h1 {
-    color: $primary-color;
-    font-family: $primary-font;
-    font-weight: 700;
-    font-size: 24px;
-  }
-  h2 {
-    color: $secondary-color;
-    font-family: $secondary-font;
-    font-weight: 400;
-    font-size: 16px;
-  }
-  .siapa_title {
-    h1 {
-      text-align: center;
-    }
-  }
-  .siapa_text {
-    margin-left: 50px;
-    width: 350px;
-  }
 }
 
 .divisi_container {
   //border: 2px solid yellow;
   @include containerFlex();
-  h1 {
-    color: $primary-color;
-    font-family: $primary-font;
-    font-weight: 700;
-    font-size: 24px;
-  }
-  h2 {
-    color: $secondary-color;
-    font-family: $secondary-font;
-    font-weight: 400;
-    font-size: 16px;
-  }
 
   .divisi_title {
     //border: 2px solid red;
