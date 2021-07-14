@@ -1,33 +1,85 @@
+@mixin containerFlex() {
+  //border: 2px solid green;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
 .siapa_container {
   @include containerFlex();
-  height: 80vh;
-  flex-direction: row;
   .siapa_title {
-    h1 {
-      text-align: center;
-    }
+    @include containerFlex();
+    flex-direction: row;
+    height: 20vh;
     svg {
-      width: 500px;
-    }
-    img {
-      position: absolute;
-      width: 480px;
-      margin-top: -20px;
+      margin: -20px;
+      width: 400px;
     }
   }
-  .siapa_text {
-    margin-left: 50px;
-    width: 350px;
+  .siapa_isi {
+    @include containerFlex();
+    height: 60%;
+    flex-direction: row;
+    .siapa_isi_logo {
+      img {
+        width: 450px;
+        z-index: 2;
+        position: absolute;
+        margin-top: 80px;
+        margin-left: 20px;
+      }
+      svg {
+        width: 500px;
+      }
+    }
+    .siapa_isi_text {
+      margin-left: 20px;
+      width: 400px;
+    }
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
   .siapa_container {
-    flex-direction: column;
-    .siapa_text {
-      text-align: center;
-      margin-left: 0px;
-      width: 500px;
+    .siapa_title {
+      margin-top: -50px;
+      svg {
+        margin: 20px;
+        width: 250px;
+      }
+    }
+    .siapa_isi {
+      flex-direction: column;
+      .siapa_isi_text {
+        text-align: center;
+        width: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .siapa_container {
+    .siapa_title {
+      svg {
+        margin: 20px;
+        width: 220px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .siapa_container {
+    .siapa_title {
+      svg {
+        margin: 15px;
+        width: 160px;
+      }
     }
   }
 }
@@ -36,34 +88,72 @@
   .siapa_container {
     .siapa_title {
       svg {
-        margin-left: 40px;
-        width: 400px;
-      }
-      img {
-        width: 440px;
-        margin-top: 20px;
+        margin: 10px;
+        width: 120px;
       }
     }
-    .siapa_text {
-      width: 400px;
+    .siapa_isi {
+      .siapa_isi_logo {
+        img {
+          margin-top: 110px;
+          width: 350px;
+        }
+        svg {
+          width: 400px;
+        }
+      }
+      .siapa_isi_text {
+        text-align: center;
+        width: 400px;
+      }
     }
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
+  .siapa_container {
+    .siapa_title {
+      margin-top: -50px;
+      svg {
+        margin: 0px;
+      }
+      .siapa_title_left {
+        margin-right: 10px;
+      }
+      .siapa_title_right {
+        margin-left: 10px;
+      }
+    }
+    .siapa_isi {
+      margin-top: -20px;
+      .siapa_isi_logo {
+        img {
+          margin-top: 120px;
+          width: 300px;
+        }
+        svg {
+          width: 350px;
+        }
+      }
+      .siapa_isi_text {
+        width: 340px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
   .siapa_container {
     .siapa_title {
       svg {
-        margin-left: 30px;
-        width: 350px;
+        width: 100px;
       }
-      img {
-        width: 380px;
-        margin-top: 30px;
+      .siapa_title_left {
+        margin-right: 10px;
       }
-    }
-    .siapa_text {
-      width: 340px;
+      .siapa_title_right {
+        margin-left: 10px;
+      }
     }
   }
 }
@@ -71,43 +161,222 @@
 @media (max-width: 390px) {
   .siapa_container {
     .siapa_title {
-      h1 {
-        margin-bottom: -40px;
-      }
-      svg {
-        margin-left: 15px;
-        width: 300px;
-      }
-      img {
-        width: 300px;
-        margin-top: 60px;
-      }
+      margin-top: -100px;
     }
-    .siapa_text {
-      margin-top: -20px;
-      width: 280px;
+    .siapa_isi {
+      margin-top: -50px;
+      .siapa_isi_logo {
+        img {
+          margin-top: 150px;
+          width: 250px;
+        }
+        svg {
+          width: 300px;
+        }
+      }
+      .siapa_isi_text {
+        width: 280px;
+      }
     }
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 340px) {
   .siapa_container {
     .siapa_title {
-      h1 {
-        margin-bottom: -30px;
-      }
+      margin-top: -150px;
       svg {
-        margin-left: 20px;
-        width: 240px;
+        width: 70px;
       }
-      img {
-        width: 250px;
-        margin-top: 95px;
+      .siapa_title_left {
+        margin-right: 10px;
+      }
+      .siapa_title_right {
+        margin-left: 10px;
       }
     }
-    .siapa_text {
-      margin-top: -20px;
-      width: 240px;
+    .siapa_isi {
+      margin-top: -80px;
+      .siapa_isi_logo {
+        img {
+          margin-top: 165px;
+          width: 200px;
+        }
+        svg {
+          width: 250px;
+        }
+      }
+      .siapa_isi_text {
+        width: 250px;
+      }
+    }
+  }
+}
+
+@media (max-width: 300px) {
+  .siapa_container {
+    .siapa_title {
+      svg {
+        width: 60px;
+      }
+      .siapa_title_left {
+        margin-right: 10px;
+      }
+      .siapa_title_right {
+        margin-left: 10px;
+      }
+    }
+    .siapa_isi {
+      .siapa_isi_logo {
+        img {
+          margin-top: 170px;
+          width: 180px;
+        }
+        svg {
+          width: 230px;
+        }
+      }
+      .siapa_isi_text {
+        width: 220px;
+      }
+    }
+  }
+}
+
+@media (max-height: 800px) {
+  @media (max-width: 340px) {
+    .siapa_container {
+      .siapa_isi {
+        margin-top: -70px;
+        .siapa_isi_text {
+          margin-top: -50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 700px) {
+  @media (max-width: 980px) {
+    .siapa_container {
+      margin-bottom: 50px;
+      .siapa_title {
+        margin-top: -120px;
+      }
+      .siapa_isi {
+        .siapa_isi_logo {
+          img {
+            margin-top: 130px;
+            width: 300px;
+          }
+          svg {
+            width: 350px;
+          }
+        }
+      }
+    }
+    @media (max-width: 480px) {
+      .siapa_container {
+        .siapa_isi {
+          .siapa_isi_logo {
+            img {
+              margin-top: 150px;
+              width: 250px;
+            }
+            svg {
+              width: 300px;
+            }
+          }
+          .siapa_isi_text {
+            text-align: center;
+            width: 320px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 390px) {
+    .siapa_container {
+      .siapa_isi {
+        .siapa_isi_logo {
+          margin-top: 30px;
+        }
+        .siapa_isi_text {
+          margin-top: -50px;
+          width: 270px;
+        }
+      }
+    }
+  }
+  @media (max-width: 300px) {
+    .siapa_container {
+      .siapa_isi {
+        .siapa_isi_text {
+          margin-top: -70px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 620px) {
+  .siapa_container {
+    .siapa_title {
+      margin-top: -30px;
+    }
+  }
+
+  @media (max-width: 980px) {
+    .siapa_container {
+      margin-bottom: 50px;
+      .siapa_title {
+        margin-top: -120px;
+      }
+      .siapa_isi {
+        .siapa_isi_logo {
+          img {
+            margin-top: 150px;
+            width: 250px;
+          }
+          svg {
+            width: 300px;
+          }
+        }
+        .siapa_isi_text {
+          margin-top: -50px;
+        }
+      }
+    }
+  }
+  @media (max-width: 340px) {
+    .siapa_container {
+      .siapa_isi {
+        .siapa_isi_logo {
+          img {
+            margin-top: 170px;
+            width: 200px;
+          }
+          svg {
+            width: 250px;
+          }
+        }
+        .siapa_isi_text {
+          margin-top: -80px;
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 570px) {
+  @media (max-width: 480px) {
+    .siapa_container {
+      .siapa_isi {
+        .siapa_isi_text {
+          margin-top: -80px;
+        }
+      }
     }
   }
 }
