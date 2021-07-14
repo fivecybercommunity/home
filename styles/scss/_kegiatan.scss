@@ -1,13 +1,3 @@
-@mixin containerFlex {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-}
-
 .kegiatan_wrapper {
   @include containerFlex();
   overflow-x: hidden;

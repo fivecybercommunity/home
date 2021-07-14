@@ -1,15 +1,4 @@
-@mixin containerFlex {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-}
-
 .siapa_container {
-  //border: 2px solid yellow;
   @include containerFlex();
   height: 80vh;
   flex-direction: row;
@@ -20,7 +9,7 @@
     svg {
       width: 500px;
     }
-    img {
+    .siapa_title_img {
       position: absolute;
       width: 480px;
       margin-top: -20px;
