@@ -27,22 +27,26 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="container navbar">
+      <div class="container navbar" id="navbar">
         <img src="photos/logo.svg" alt="Logo FCC" class="logo" />
         <nav>
-          <ul class="nav__links">
+          <ul class="nav__links non-responsive">
             <li><a href="#">PROFIL</a></li>
             <li><a href="#">KEGIATAN</a></li>
             <li><a href="#">KARYA</a></li>
           </ul>
         </nav>
-        <a href="#"><button>DAFTAR</button></a>
+        <a href="#" class="non-responsive"><button>DAFTAR</button></a>
+        <a href="#" class="icon" onclick="navbarToggler()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </header>
 
     <!-- Jumbotron -->
     <section id="jumbotron">
       <div class="jumbotron">
+        <img src="photos/logo-decor.svg" alt="Dekor" class="image-decor">
         <img src="photos/logo.svg" alt="Logo FCC" class="image" />
         <h1>FIVE CYBER COMMUNITY</h1>
         <h2>One step closer into technological singularity</h2>

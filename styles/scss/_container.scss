@@ -8,9 +8,14 @@
     justify-content : center;
     flex-direction : column;
     user-select: none;
+    .image-decor {
+        position : relative;
+        height : 350px;
+    }
     .image {
         height : 250px;
         width : auto;
+        position : absolute;
     }
     h1 {
         color : $primary-color;
