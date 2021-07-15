@@ -67,7 +67,7 @@ header .navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 10%;
+  padding: 10px 10%;
 }
 
 header ul {
@@ -281,9 +281,15 @@ body h2 {
           user-select: none;
 }
 
+.jumbotron .image-decor {
+  position: relative;
+  height: 350px;
+}
+
 .jumbotron .image {
   height: 250px;
   width: auto;
+  position: absolute;
 }
 
 .jumbotron h1 {
