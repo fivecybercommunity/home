@@ -1,4 +1,14 @@
-
+//Navbar toggler
+function navbarToggler(){
+    var x = document.getElementById("navbar");
+    if (x.className == "container navbar"){
+        x.className += " responsive";
+        console.log("asede wan");
+    } else {
+        x.className = "container navbar";
+        console.log("asede tu");
+    }
+}
 
 // Gsap 
 gsap.registerPlugin(ScrollTrigger);

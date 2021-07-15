@@ -123,13 +123,18 @@ footer {
 }
 
 @media (max-width : 800px) {
-  body {
-    overflow-x : hidden;
-  }
   .non-responsive {
     display : none;
   }
   .icon {
     display : block !important;
+  }
+  .navbar.responsive{
+    position : relative !important;
+  }
+  .navbar.responsive a {
+    float : none;
+    display : block;
+    text-align : left;
   }
 }
