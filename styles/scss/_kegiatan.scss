@@ -366,8 +366,10 @@
   }
 }
 
-@media (max-height: 650px) {
+@media (max-height: 660px) {
   .kegiatan_wrapper {
+    margin-top: -20px;
+    height: 800px;
     .kegiatan_container {
       .kegiatan_bersama {
         margin-top: 40px;
