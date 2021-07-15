@@ -26,6 +26,9 @@ header {
   justify-content: space-between;
   align-items: center;
   user-select: none;
+  .non-responsive {
+
+  }
   .logo {
     height: 40px;
     width: auto;
@@ -119,13 +122,14 @@ footer {
   color: rgba($color: #ffffff, $alpha: 1);
 }
 
-@media (min-width : 300px) {
-  
-}
-
-@media (min-width : 768px) {
-  
-}
-@media (min-width : 1080px) {
-  
+@media (max-width : 800px) {
+  body {
+    overflow-x : hidden;
+  }
+  .non-responsive {
+    display : none;
+  }
+  .icon {
+    display : block !important;
+  }
 }
