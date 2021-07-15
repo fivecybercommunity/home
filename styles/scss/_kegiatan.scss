@@ -357,19 +357,35 @@
 
 @media (max-height: 700px) {
   .kegiatan_wrapper {
+    .kegiatan_wrapper {
+      margin-top: -20px;
+      height: 800px;
+      .kegiatan_container {
+        .kegiatan_bersama {
+          margin-top: 30px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-height: 660px) {
+  .kegiatan_wrapper {
+    margin-top: -20px;
+    height: 800px;
     .kegiatan_container {
       .kegiatan_bersama {
-        margin-top: 30px;
-        margin-bottom: 20px;
+        margin-top: 40px;
+        margin-bottom: 30px;
       }
     }
   }
 }
 
-@media (max-height: 660px) {
+@media (max-height: 600px) {
   .kegiatan_wrapper {
     margin-top: -20px;
-    height: 800px;
+    height: 1000px;
     .kegiatan_container {
       .kegiatan_bersama {
         margin-top: 40px;
