@@ -21,6 +21,45 @@ body {
   margin: 0;
 }
 header {
+  padding : 5px 20px;
+  ul {
+    list-style-type : none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .toggle {
+      cursor: pointer;
+      order: 1;
+    }
+    .item.button {
+      order: 2;
+    }
+    .item {
+      width : 100%;
+      text-align: center;
+      order: 3;
+      display : none;
+    }
+    .item.active {
+      display: block;
+    }
+  }
+  li {
+    padding : 15px 5px;
+  }
+  a {
+    text-decoration: none;
+    font-family: $primary-font;
+    color: $secondary-color;
+    font-size: 16px;
+    display: block;
+    transition: all 0.5s ease 0s;
+    &:hover {
+      color: $selected-color;
+    }
+  }
+  /*
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -78,6 +117,63 @@ header {
   .icon {
     display : none;
   }
+  */
+}
+
+/* Tablet Menu*/
+@media all and (min-width: 468px) {
+  header {
+    ul {
+      justify-content: center;
+    }
+    .logo {
+      flex: 1;
+    }
+    .item.button {
+      width: auto !important;
+      order: 1 !important;
+      display: block !important;
+    }
+    .toggle {
+      order: 2 !important;
+    }
+    .button a {
+      text-decoration: none;
+      padding: 7px 15px;
+      background: teal;
+      &:hover {
+        transition: all .25s;
+      }
+    }
+    .button:not(.secondary) a:hover{
+      background: #006d6d;
+      border-color: #005959;
+    }
+  }
+}
+@media all and (min-width: 768px) {
+  .item {
+    display: block !important;
+    width : auto !important;
+  }
+  .toggle {
+    display : none;
+  }
+  .logo {
+    order: 0;
+  }
+  .item {
+    order: 1 !important;
+  }
+  .button {
+    order: 2 !important;
+  }
+  ul li{
+    padding: 15px 10px;
+  }
+  ul li.button {
+    padding-right: 0;
+  }
 }
 
 footer {
@@ -120,21 +216,4 @@ footer {
   font-family: $primary-font;
   font-size: 14px;
   color: rgba($color: #ffffff, $alpha: 1);
-}
-
-@media (max-width : 800px) {
-  .non-responsive {
-    display : none;
-  }
-  .icon {
-    display : block !important;
-  }
-  .navbar.responsive{
-    position : relative !important;
-  }
-  .navbar.responsive a {
-    float : none;
-    display : block;
-    text-align : left;
-  }
 }
