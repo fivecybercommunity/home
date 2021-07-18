@@ -1682,12 +1682,6 @@ body h2 {
   }
 }
 
-header,
-.jumbotron,
-.siapa_wrapper {
-  display: none;
-}
-
 html,
 body {
   overflow-x: hidden;
