@@ -4,69 +4,11 @@
 @import "scss/container";
 @import "scss/kegiatan";
 @import "scss/siapa";
+@import "scss/divisi";
 
 // Aku ngga ngerti kamu pisahinnya gimana jadi nulis di sini
 
-@mixin containerFlex {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-}
 html,
-body {
+s body {
   overflow-x: hidden;
-}
-
-.divisi_container {
-  //border: 2px solid yellow;
-  @include containerFlex();
-
-  .divisi_title {
-    //border: 2px solid red;
-    display: flex;
-    margin-bottom: 140px;
-    .divisi_title_text {
-      margin-left: 20px;
-    }
-  }
-
-  .divisi_developer {
-    //border: 2px solid blue;
-    display: flex;
-    margin-bottom: 70px;
-    .divisi_developer_text {
-      width: 350px;
-      text-align: right;
-      .divisi_developer_text_title {
-        margin-right: -40px;
-        margin-bottom: 10px;
-      }
-    }
-    svg {
-      margin-left: 50px;
-      width: 300px;
-      height: 250px;
-    }
-  }
-
-  .divisi_designer {
-    //border: 2px solid green;
-    display: flex;
-    .divisi_designer_text {
-      width: 350px;
-      .divisi_designer_text_title {
-        margin-left: -40px;
-        margin-bottom: 10px;
-      }
-    }
-    svg {
-      margin-right: 50px;
-      width: 300px;
-      height: 250px;
-    }
-  }
 }

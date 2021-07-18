@@ -1426,11 +1426,6 @@ body h2 {
   }
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
 .divisi_container {
   height: 100vh;
   width: 100%;
@@ -1457,7 +1452,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 140px;
+  margin-bottom: 80px;
 }
 
 .divisi_container .divisi_title .divisi_title_text {
@@ -1472,19 +1467,20 @@ body {
 }
 
 .divisi_container .divisi_developer .divisi_developer_text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   width: 350px;
-  text-align: right;
+  text-align: center;
 }
 
 .divisi_container .divisi_developer .divisi_developer_text .divisi_developer_text_title {
-  margin-right: -40px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.divisi_container .divisi_developer svg {
-  margin-left: 50px;
-  width: 300px;
-  height: 250px;
+.divisi_container .divisi_developer img {
+  margin-left: 30px;
+  width: 320px;
 }
 
 .divisi_container .divisi_designer {
@@ -1494,17 +1490,137 @@ body {
 }
 
 .divisi_container .divisi_designer .divisi_designer_text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
   width: 350px;
 }
 
 .divisi_container .divisi_designer .divisi_designer_text .divisi_designer_text_title {
-  margin-left: -40px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.divisi_container .divisi_designer svg {
-  margin-right: 50px;
-  width: 300px;
-  height: 250px;
+.divisi_container .divisi_designer img {
+  margin-right: 30px;
+  width: 320px;
+}
+
+@media (max-width: 750px) {
+  .divisi_container .divisi_title {
+    margin-bottom: 40px;
+  }
+  .divisi_container .divisi_title svg {
+    width: 430px;
+  }
+  .divisi_container .divisi_developer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 40px;
+  }
+  .divisi_container .divisi_developer .divisi_developer_text {
+    margin-top: 20px;
+    width: 500px;
+  }
+  .divisi_container .divisi_developer .divisi_developer_text .divisi_developer_text_title {
+    margin-bottom: 0px;
+  }
+  .divisi_container .divisi_developer img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 0px;
+    width: 250px;
+  }
+  .divisi_container .divisi_designer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .divisi_container .divisi_designer .divisi_designer_text {
+    margin-top: 20px;
+    width: 480px;
+  }
+  .divisi_container .divisi_designer .divisi_designer_text .divisi_designer_text_title {
+    margin-bottom: 0px;
+  }
+  .divisi_container .divisi_designer img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-right: 0px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .divisi_container .divisi_title svg {
+    width: 380px;
+  }
+  .divisi_container .divisi_developer .divisi_developer_text {
+    width: 450px;
+  }
+  .divisi_container .divisi_designer .divisi_designer_text {
+    width: 450px;
+  }
+}
+
+@media (max-width: 530px) {
+  .divisi_container .divisi_title svg {
+    width: 300px;
+  }
+  .divisi_container .divisi_developer .divisi_developer_text {
+    width: 350px;
+  }
+  .divisi_container .divisi_developer img {
+    width: 200px;
+  }
+  .divisi_container .divisi_designer .divisi_designer_text {
+    width: 350px;
+  }
+  .divisi_container .divisi_designer img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 470px) {
+  .divisi_container .divisi_title svg {
+    width: 220px;
+  }
+}
+
+@media (max-width: 430px) {
+  .divisi_container .divisi_developer .divisi_developer_text {
+    width: 280px;
+  }
+  .divisi_container .divisi_designer .divisi_designer_text {
+    width: 280px;
+  }
+}
+
+@media (max-width: 340px) {
+  .divisi_container .divisi_title svg {
+    width: 180px;
+  }
+  .divisi_container .divisi_developer img {
+    width: 150px;
+  }
+  .divisi_container .divisi_developer .divisi_developer_text {
+    width: 250px;
+  }
+  .divisi_container .divisi_designer img {
+    width: 150px;
+  }
+  .divisi_container .divisi_designer .divisi_designer_text {
+    width: 250px;
+  }
+}
+
+html,
+s body {
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=style.css.map */
