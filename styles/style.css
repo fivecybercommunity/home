@@ -1506,6 +1506,30 @@ body h2 {
   width: 320px;
 }
 
+@media (max-height: 850px) {
+  .divisi_container .divisi_developer img {
+    width: 250px;
+  }
+  .divisi_container .divisi_designer img {
+    width: 250px;
+  }
+}
+
+@media (max-height: 700px) {
+  .divisi_container .divisi_developer img {
+    width: 200px;
+  }
+  .divisi_container .divisi_designer img {
+    width: 200px;
+  }
+}
+
+@media (max-height: 600px) {
+  .divisi_container {
+    height: 600px;
+  }
+}
+
 @media (max-width: 750px) {
   .divisi_container .divisi_title {
     margin-bottom: 40px;
@@ -1556,6 +1580,30 @@ body h2 {
   }
 }
 
+@media (max-width: 750px) and (max-height: 900px) {
+  .divisi_container .divisi_developer img {
+    width: 200px;
+  }
+  .divisi_container .divisi_designer img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 750px) and (max-height: 760px) {
+  .divisi_container .divisi_developer img {
+    width: 150px;
+  }
+  .divisi_container .divisi_designer img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 750px) and (max-height: 680px) {
+  .divisi_container {
+    height: 700px;
+  }
+}
+
 @media (max-width: 600px) {
   .divisi_container .divisi_title svg {
     width: 380px;
@@ -1583,6 +1631,21 @@ body h2 {
   }
   .divisi_container .divisi_designer img {
     width: 200px;
+  }
+}
+
+@media (max-width: 530px) and (max-height: 805px) {
+  .divisi_container .divisi_developer img {
+    width: 150px;
+  }
+  .divisi_container .divisi_designer img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 530px) and (max-height: 700px) {
+  .divisi_container {
+    height: 700px;
   }
 }
 
@@ -1619,8 +1682,14 @@ body h2 {
   }
 }
 
+header,
+.jumbotron,
+.siapa_wrapper {
+  display: none;
+}
+
 html,
-s body {
+body {
   overflow-x: hidden;
 }
 /*# sourceMappingURL=style.css.map */
