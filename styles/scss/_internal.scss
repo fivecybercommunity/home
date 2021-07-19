@@ -140,14 +140,18 @@ header {
     .button a {
       text-decoration: none;
       padding: 7px 15px;
-      background: teal;
+      background: rgba($color: #121212, $alpha: 1.0);
+      border-color : $primary-color;
+      border: solid 1.5px;
+      border-radius: 50px;
       &:hover {
         transition: all .25s;
       }
     }
     .button:not(.secondary) a:hover{
-      background: #006d6d;
-      border-color: #005959;
+      color : rgba($color: #121212, $alpha: 1.0);
+      background: rgba($color: #ffffff, $alpha: 1.0);
+      border-color: rgba($color: #ffffff, $alpha: 1.0);
     }
   }
 }

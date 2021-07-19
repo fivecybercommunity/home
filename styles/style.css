@@ -181,15 +181,19 @@ header a:hover {
   header .button a {
     text-decoration: none;
     padding: 7px 15px;
-    background: teal;
+    background: #121212;
+    border-color: rgba(255, 255, 255, 0.8);
+    border: solid 1.5px;
+    border-radius: 50px;
   }
   header .button a:hover {
     -webkit-transition: all .25s;
     transition: all .25s;
   }
   header .button:not(.secondary) a:hover {
-    background: #006d6d;
-    border-color: #005959;
+    color: #121212;
+    background: white;
+    border-color: white;
   }
 }
 
