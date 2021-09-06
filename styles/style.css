@@ -478,6 +478,12 @@ body h2 {
   }
 }
 
+@media (max-height: 450px) {
+  .jumbotron {
+    height: 450px;
+  }
+}
+
 .kegiatan_wrapper {
   height: 100vh;
   width: 100%;
