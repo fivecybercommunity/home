@@ -37,5 +37,4 @@ function goto(x){
     else{
         gsap.to(window,{scrollTo:"#kegiatan",duration:2});
     }
-    preventDefault();
 }
