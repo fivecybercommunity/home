@@ -15,9 +15,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- GSap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script> 
+    
     <!-- Bootstrap CSS 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -33,8 +34,8 @@
       <nav class="container">
         <ul>
           <li class="logo"><img src="photos/logo.svg" style="height:40px;width:auto;" alt=""></li>
-          <li class="item"><a href="#siapakami">PROFIL</a></li>
-          <li class="item"><a href="#kegiatan">KEGIATAN</a></li>
+          <li class="item"><a onclick="goto(1)" href="#">PROFIL</a></li>
+          <li class="item"><a onclick="goto(2)"href="#">KEGIATAN</a></li>
           <li class="item button"><a href="https://forms.gle/tcURiNRFERTPiDU58" target="_blank">DAFTAR</a></li>
           <li class="toggle"><i class="fa fa-bars" style="color: white"></i></li>
         </ul>
